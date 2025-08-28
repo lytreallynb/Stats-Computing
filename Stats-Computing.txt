@@ -83,7 +83,7 @@ luke$father            				# access by $
 for(animal in c("tiger","llama","cat")){
   print(paste("animal is", animal))
 }
-map(1:6, ~ .x^2)       				# map
+map(1:6, ~ .x^2)       				# map always return a list
 map2(colors,animals,paste) 				# map2
 map_dbl(1:6,~.x^2)    				# map to dbl
 reduce(1:10,~.x+.y,0) 				# reduce
